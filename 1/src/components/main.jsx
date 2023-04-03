@@ -1,13 +1,13 @@
 import Categorias from './catego'
-
+import Style from '../styles/main.module.css'
 
 
 export default function Main() {
     return (
         <main>
-            <div>
+            <div className={Style.abacaxi}>
                 <Categorias/>
-                <section>
+                <section className={Style.content}>
                     <div>-------imagem--------</div>
 
                     <div>
