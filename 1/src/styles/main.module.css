@@ -1,11 +1,56 @@
 
+.img {
+    width: 700px;
+    background-color: aqua;
+    height: 20px;
+}
 
-.abacaxi {
+.Container {
     display: flex;
-    
+    flex-wrap: wrap;
 }
 
 .content {
     margin: 40px;
     display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+}
+
+.NovoUsuario {
+    background-color: blue;
+    height: 270px;
+    margin-top: 15px;
+}
+
+.NovoUsu_ofertas {
+    display: flex;
+}
+
+
+
+
+.BemVindo {
+    margin: 20px;
+    margin-left: 190px;
+    margin-bottom: 50px;
+    height: 40px;
+}
+
+.Su_Dels {
+    margin: 10px;
+    background-color: blueviolet;
+}
+
+.Su_Dels > .Super_Products {
+    display: flex;
+}
+
+
+
+
+
+.produtos_destacados {
+    display: flex;
+    margin-left: 20px;
 }
