@@ -1,0 +1,78 @@
+.topo {
+    display: flex;
+}
+
+.topo > div {
+    margin-left: 10px;
+    padding: 4px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: #fafafa;
+}
+
+.topo img {
+    height: 8px;
+}
+
+
+
+
+
+.branco {
+    background-color: #ffff;
+    width: 64px;
+    height: 4px;
+    position: absolute;
+    top: 29px;
+    left: -1px;
+    border-left: 1px solid rgba(128, 128, 128, 0.44);
+    border-right: 1px solid rgba(128, 128, 128, 0.44);
+}
+
+
+
+
+
+
+
+.container {
+    position: relative;
+}
+
+.container:hover {
+    border: 1px solid rgba(128, 128, 128, 0.44);
+}
+
+
+
+
+.ocultar {
+    display: none;     
+}
+
+.exibir {
+    display: block;
+}
+
+
+
+
+
+.ul {
+    background-color: #ffffff;
+    position: absolute;
+    top: 29px;
+    left: -1px;
+    padding: 4px;
+    border: 1px solid rgba(128, 128, 128, 0.44);
+}
+
+.lista li {
+    text-indent: 4px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 7px;
+    text-decoration: none;
+    color: #333;
+    font-size: 12.3px;
+    font-family: Open Sans, Roboto, Arial, Helvetica, sans-serif, SimSun;
+}

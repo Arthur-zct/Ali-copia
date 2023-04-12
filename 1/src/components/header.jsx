@@ -1,60 +1,13 @@
 import Logo from '../img/Logo.png'
-import Style from "../styles/header.module.css"
+import Style from "../styles/Header.module.css"
+import Topo from './Topo'
 
 
-export default function header() {
+export default function Header() { 
     return (
         <header>
             <div className={Style.topo}>
-                <div>
-                    <span>
-                        <a href="/">Vender no aliexpress</a>
-                        
-                    </span>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <span>
-                        <a href="/">Ajuda</a>
-                    </span>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <a href="/">Proteção ao consumidor</a>
-                </div>
-
-                <div>
-                    <a href="/">App</a>
-                </div>
-
-                <div>
-                    <span>
-                        <a href="/">brasil/portugues/brl</a>
-                    </span>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <a href="/">Lista de desejos</a>
-                </div>
-
-                <div>
-                    <span>
-                        <a href="/">Minha conta</a>
-                    </span>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-
+                <Topo />
             </div>
 
             <div className={Style.Logo_pesquisa}>
