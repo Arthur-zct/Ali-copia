@@ -14,38 +14,40 @@ const Topo = () => {
   return (
     <div className={Style.topo}>
         
-        <div className={Style.container} onMouseOver={() => {setExibir(true);}} onMouseOut={() => {setExibir(false);}}>
-            <span className={Style.span1}>
+        <div className={Style.vendas_container} onMouseOver={() => {setExibir(true);}} onMouseOut={() => {setExibir(false);}}>
+         
+            <div className={Exibir ? Style.exibir : Style.ocultar}>
+                <ul className={Style.ul_venda}>
+                    <li>Login do vendedor</li>
+                    <li>chines</li>
+                    <li>Registro de vendedor não chines</li>
+                </ul>
+            </div>
+            <span className={Style.span_venda} style={Exibir ? {backgroundColor: '#ffff'} : {}}>
                 <a href="/">
                     Vender no Aliexpres
                     <img src={Setinha} alt="a" />
                 </a> 
             </span>
-         
-            <div className={Exibir ? Style.exibir : Style.ocultar}>
-                <ul className={Style.ul}>
-                    <li>tarde</li>
-                    <li>dia</li>
-                    <li>noite</li>
-                </ul>
-            </div>         
+
         </div>
 
-        <div className={Style.container} onMouseOver={() => {setExibir2(true);}} onMouseOut={() => {setExibir2(false);}}>
-            <span >
+        <div className={Style.ajuda_container} onMouseOver={() => {setExibir2(true);}} onMouseOut={() => {setExibir2(false);}}>
+            <div className={Exibir2 ? Style.exibir : Style.ocultar}>
+                <ul className={Style.ul_ajuda}>
+                    <li>Central de Ajuda</li>
+                    <li>Disputas e Recursos</li>
+                    <li>Denunciar infração de propriedade intelectual</li>
+                </ul>
+            </div>   
+
+            <span className={Style.span_ajuda}>
                 <a href="/">
                     Ajuda
                     <img src={Setinha} alt="a" />
                 </a> 
             </span>
-         
-            <div className={Exibir2 ? Style.exibir : Style.ocultar}>
-                <ul className={Style.ul}>
-                    <li>Central de Ajuda</li>
-                    <li>Disputas e Recursos</li>
-                    <li>Denunciar infração de propriedade intelectual</li>
-                </ul>
-            </div>         
+
         </div>
 
         <div>
@@ -82,22 +84,26 @@ const Topo = () => {
             </a>
         </div>
 
-        <div className={Style.container} onMouseOver={() => {setExibir3(true);}} onMouseOut={() => {setExibir3(false);}}>
-            <span>
+        <div className={Style.conta_container} onMouseOver={() => {setExibir3(true);}} onMouseOut={() => {setExibir3(false);}}>
+            <div className={Exibir3 ? Style.exibir : Style.ocultar}>
+                <ul className={Style.ul_conta}>
+                    <li>Meus pedidos</li>
+                    <li>Minhas moedas</li>
+                    <li>Central de mensagens</li> 
+                    <li>Pagamento</li>
+                    <li>Lista de desejos</li>
+                    <li>Minhas lojas favoritas</li>
+                    <li>Meus Cupons</li>
+                </ul> 
+            </div>
+            
+            <span className={Style.span_conta}>
                 <a href="/">
                     Minha conta
                     <img src={Setinha} alt="a" />
                 </a>
             </span>
-            
-            <div className={Exibir3 ? Style.exibir : Style.ocultar}>
-                <ul className={Style.ul}>
-                    <li>tarde</li>
-                    <li>tarde</li>
-                    <li>tarddde</li> 
-                </ul> 
-            </div>
-            <div className={Style.branco}></div>
+
         </div>
 
     </div>

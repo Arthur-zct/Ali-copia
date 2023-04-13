@@ -3,9 +3,8 @@
 }
 
 .topo > div {
-    margin-left: 10px;
-    padding: 4px;
-    border: 1px solid rgba(0, 0, 0, 0);
+    margin-left: 21px;
+    padding-top: 6px;
     background-color: #fafafa;
 }
 
@@ -17,30 +16,6 @@
 
 
 
-.branco {
-    background-color: #ffff;
-    width: 64px;
-    height: 4px;
-    position: absolute;
-    top: 29px;
-    left: -1px;
-    border-left: 1px solid rgba(128, 128, 128, 0.44);
-    border-right: 1px solid rgba(128, 128, 128, 0.44);
-}
-
-
-
-
-
-
-
-.container {
-    position: relative;
-}
-
-.container:hover {
-    border: 1px solid rgba(128, 128, 128, 0.44);
-}
 
 
 
@@ -55,24 +30,115 @@
 
 
 
+.container {
+    position: relative;
+    margin-bottom: 8px;
+}
+.container:hover {
+    border: 1px solid rgba(128, 128, 128, 0.44);
+    margin-bottom: 0px;
+}
 
 
-.ul {
-    background-color: #ffffff;
-    position: absolute;
-    top: 29px;
-    left: -1px;
-    padding: 4px;
+
+
+.vendas_container {
+    position: relative;
+    width: 127px;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.vendas_container:hover {
     border: 1px solid rgba(128, 128, 128, 0.44);
 }
 
-.lista li {
+.span_venda {
+    position: absolute;
+    width: 100%;
+    padding-left: 2px;
+    height: 100%;
+}
+
+.ul_venda {
+    width: 204px;
+}
+
+
+
+
+
+.ajuda_container {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin-bottom: 6px;
+    height: 20px;
+    width: 50px;
+}
+
+.ajuda_container:hover {
+    border: 1px solid rgba(128, 128, 128, 0.44);
+    margin-bottom: 0px;
+    height: auto;
+}
+
+.span_ajuda {
+    position: absolute;
+    padding-left: 4px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.ul_ajuda {
+    width: 272px;
+}
+
+
+
+
+.conta_container {
+    position: relative;
+    width: 90px;
+    height: 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.conta_container:hover {
+    border: 1px solid rgba(128, 128, 128, 0.44);
+    height: auto;
+}
+
+.span_conta {
+    position: absolute;
+    padding-left: 4px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.ul_conta {
+    width: 200px;
+}
+
+
+
+
+.topo ul {
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: -0.5px;
+    padding-left: 3px;
+    padding-bottom: 1px;
+    border: 1px solid rgba(128, 128, 128, 0.44);
+}
+
+.topo li {
     text-indent: 4px;
     margin-top: 7px;
     margin-bottom: 7px;
-    margin-right: 7px;
     text-decoration: none;
     color: #333;
-    font-size: 12.3px;
+    font-size: 12.8px;
     font-family: Open Sans, Roboto, Arial, Helvetica, sans-serif, SimSun;
 }
