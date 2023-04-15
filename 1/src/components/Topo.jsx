@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Style from '../styles/Topo.module.css'
 import Setinha from '../img/setinha.png'
+import Celular from '../img/celular.png'
 
 const Topo = () => {
 
@@ -9,6 +10,7 @@ const Topo = () => {
     const [Exibir, setExibir] = useState(false);
     const [Exibir2, setExibir2] = useState(false);
     const [Exibir3, setExibir3] = useState(false);
+    const [Exibir4, setExibir4] = useState(false);
 
 
   return (
@@ -59,21 +61,24 @@ const Topo = () => {
 
         <div>
             <a href="/">
+                <img src={Celular} alt="a" />
                 App
-                <img src={Setinha} alt="a" />
             </a>
         </div>
 
-        <div>
+        <div className={Style.pais_container} onMouseOver={() => {setExibir3(true);}} onMouseOut={() => {setExibir3(false);}}>
             <span>
                 <a href="/">
                     brasil/portugues/brl
                     <img src={Setinha} alt="a" />
                 </a>
             </span>
-            <ul>
-                <li></li>
-            </ul>
+            <div className={Exibir3 ? Style.exibir : Style.ocultar}>
+                <ul>
+                    <li>aaaa</li>
+                </ul> 
+            </div>
+            
         </div>
 
 
@@ -84,8 +89,8 @@ const Topo = () => {
             </a>
         </div>
 
-        <div className={Style.conta_container} onMouseOver={() => {setExibir3(true);}} onMouseOut={() => {setExibir3(false);}}>
-            <div className={Exibir3 ? Style.exibir : Style.ocultar}>
+        <div className={Style.conta_container} onMouseOver={() => {setExibir4(true);}} onMouseOut={() => {setExibir4(false);}}>
+            <div className={Exibir4 ? Style.exibir : Style.ocultar}>
                 <ul className={Style.ul_conta}>
                     <li>Meus pedidos</li>
                     <li>Minhas moedas</li>

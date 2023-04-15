@@ -9,7 +9,7 @@ header {
 }
 
 .topo {
-    height: 35px;
+    height: 38px;
     display: flex;
     width: 800px;
     margin: auto;
@@ -21,28 +21,75 @@ header {
 
 
 
-.infos {
-    display: none;
-}
 
 
-
-
-
-.topo  ul {
-    list-style: none;
-}
-
-.topo div a {
-    text-decoration: none;
-    color: #333;
-    font-size: 12.3px;
-    font-family: Open Sans, Roboto, Arial, Helvetica, sans-serif, SimSun;
-}
 
 
 .Logo_pesquisa {
-    border-top: 1px solid rgba(0, 0, 0, 0.179);
-    padding: 27px;
+    border-top: 1px solid rgba(0, 0, 0, 0.074);
+    display: flex;
+    padding-left: 200px;
 }
 
+.Logo_pesquisa > img {
+    height: 40px;
+    margin-top: 17px;
+}
+
+.pesquisa_input {
+    display: flex;
+    height: 39px;
+    margin-left: 35px;
+    margin-top: 22px;
+}
+
+.pesquisa_input input {
+    border: 2px solid #ff4747;
+    width: 600px;
+    outline: #ff4747;
+    border-radius: 4px 0px 0px 4px;
+    padding: 5px;
+}
+
+
+
+
+
+.input_img {
+    height: 39px;
+    border: 2px solid #ff4747;
+    border-radius: 0px 4px 4px 0px;
+    text-align: center;
+    background-color: #ff4747;
+}
+
+.input_img img {
+    height: 90%;
+    margin-top: 5%;
+}
+
+
+
+
+.lista_container {
+    margin-left: 35px;
+    padding-bottom: 15px;
+}
+
+.lista_container a {
+    text-decoration: none;
+    color: #333333d7;
+    font-size: 11.8px;
+    font-family: Open Sans, Roboto, Arial, Helvetica, sans-serif, SimSun;
+    border-right: 1px solid rgba(0, 0, 0, 0.127);
+    padding-right: 3px;  
+}
+
+.lista_container ul {
+    list-style: none;
+    display: flex;
+}
+
+.lista_container li {
+    margin-right: 5px;
+}
