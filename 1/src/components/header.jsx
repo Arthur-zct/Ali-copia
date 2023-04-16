@@ -3,6 +3,7 @@ import Style from "../styles/Header.module.css"
 import Topo from './Topo'
 
 import Lupa from '../img/lupa.png'
+import Carrinho from '../img/carrinho.png'
 
 export default function Header() { 
     return (
@@ -16,11 +17,14 @@ export default function Header() {
                 
                 <div>
                     <div className={Style.pesquisa_input}>
-                        <input type="text" placeholder='boa tarde'/>
+                        <input type="text" placeholder='cilios y'/>
                         <div className={Style.input_img}>
                             <a href="/">
                                 <img src={Lupa} alt="" />
                             </a>
+                        </div>
+                        <div className={Style.carrinho}>
+                            <img src={Carrinho} alt="Carrinho de compras" />
                         </div>
                     </div>
                     <div className={Style.lista_container}>
