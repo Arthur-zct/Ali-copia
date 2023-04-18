@@ -1,0 +1,29 @@
+.categorias_container ul {
+    list-style: none;
+}
+
+.categorias_container li {
+    height: 40px;
+    width: 190px;
+    padding-top: 10px;
+    padding-left: 7px;
+    border: 1px solid green;
+    background-color: rgb(255, 255, 255);
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.638);
+}
+
+.categorias_container li:hover {
+    font-weight: bolder;
+    color: black;
+}
+
+.categorias_container li > span:hover {
+    color: #ff605e;
+}
+
+.categorias_container h3 {
+    background-color: #f9f9f9;
+    height: 40px;
+    padding: 8px;
+}

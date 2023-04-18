@@ -19,19 +19,25 @@ header {
 
 
 
-
-
-
-
-
-
-.Logo_pesquisa {
+.Pesquisa_container {
     border-top: 1px solid rgba(0, 0, 0, 0.074);
-    display: flex;
-    padding-left: 200px;
+    
 }
 
-.Logo_pesquisa > img {
+
+
+
+
+.pesquisa {
+    display: flex;
+    margin: auto;
+    width: 998px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.pesquisa > img {
     height: 40px;
     margin-top: 17px;
 }
@@ -45,7 +51,8 @@ header {
 
 .pesquisa_input input {
     border: 2px solid #ff4747;
-    width: 620px;
+    width: 42vw;
+    min-width: 500px;
     outline: #ff4747;
     border-radius: 4px 0px 0px 4px;
     padding: 4px;

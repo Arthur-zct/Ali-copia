@@ -14,10 +14,12 @@
 .Container {
     display: flex;
     flex-wrap: wrap;
+    width: 1100px;
+    margin: auto;
 }
 
 .content {
-    margin: 40px;
+    margin: 4px;
     display: flex;
     flex-wrap: wrap;
     width: 900px;
