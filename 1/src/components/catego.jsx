@@ -10,6 +10,8 @@ import ModaMasculina from '../img/categorias/modaMasc.png'
 import ModaMasculinaVerm from '../img/categorias/modaMascVermelho.png'
 import TelefoniaComu from '../img/categorias/telefoniaEcomu.png'
 import TelefoniaComuVermelho from '../img/categorias/telefoniaEcomu-vermelho.png'
+import CompuEscri from '../img/categorias/CompEscri.png'
+import CompuEscriVermelho from '../img/categorias/CompEscriVermelho.png'
 
 export default function Categorias () {
     
@@ -17,7 +19,7 @@ export default function Categorias () {
     const [ExibirVest, setExibirVest] = useState(false);
     const [ExibirMasc, setExibirMasc] = useState(false);
     const [ExibirTeleComu, setExibirTeleComu] = useState(false);
-    const [Exibir4, setExibir4] = useState(false);
+    const [ExibirCompuEscri, setExibirCompuEscri] = useState(false);
 
 
     return (
@@ -59,8 +61,9 @@ export default function Categorias () {
                 </li>
 
 
-                <li>
+                <li onMouseOver={() => {setExibirCompuEscri(true);}} onMouseOut={() => {setExibirCompuEscri(false);}}>
                     <span> 
+                        <img src={ExibirCompuEscri ? CompuEscriVermelho : CompuEscri} alt="Computadores e Escritorio icone" />
                         <div>
                             <a href="/">Computadores</a>,<a href="/">Escritorio</a>
                         </div> 

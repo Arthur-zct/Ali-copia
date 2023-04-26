@@ -1,15 +1,31 @@
 import Categorias from './catego';
 import Style from '../styles/main.module.css';
-
+import ImagemPromocional from '../img/Promocional.png'
 
 export default function Main() {
+
+    //<div className={Style.ImagemPromocional}><img src={ImagemPromocional} alt="" /></div>
+    
+    
     return (
         <main>
             <div className={Style.Container}>
                 <Categorias/>
                 <section className={Style.content}>
 
-                    <div className={Style.img}>-------imagem--------</div>
+                    <div>
+                        <ul className={Style.ImagemPromocional}>
+                            <li className={Style.imagem1}>
+                                <img src="https://ae01.alicdn.com/kf/Hf1cb2e658ce54f779902bd0d57a1ad43S/221x22.png_.webp" alt="" />
+                            </li>
+                            <li className={Style.imagem2}>
+                                <img src="https://ae01.alicdn.com/kf/H89ab02b8ab3740c4a5af59be4e4a54cbc/321x22.png_.webp" alt="" />
+                            </li>
+                            <li className={Style.imagem3}>
+                                <img src="https://ae01.alicdn.com/kf/H6f30d07d0efa4e89aac0605d6ab46cb8l/145x22.png_.webp" alt="" />
+                            </li>
+                        </ul>
+                    </div>
 
                     <div className={Style.NovoUsuario}>
                         <div>
