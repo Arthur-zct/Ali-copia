@@ -1,19 +1,144 @@
+import { useState } from 'react'
 import Styles from '../styles/Categorias.module.css'
 
 
+//icones
+import Catego from '../img/categorias-ico.png'
+import Vestido from '../img/categorias/vestido.png'
+import VestVerm from '../img/categorias/vestido-vermelho.png'
+import ModaMasculina from '../img/categorias/modaMasc.png'
+import ModaMasculinaVerm from '../img/categorias/modaMascVermelho.png'
+import TelefoniaComu from '../img/categorias/telefoniaEcomu.png'
+import TelefoniaComuVermelho from '../img/categorias/telefoniaEcomu-vermelho.png'
+
 export default function Categorias () {
+    
+
+    const [ExibirVest, setExibirVest] = useState(false);
+    const [ExibirMasc, setExibirMasc] = useState(false);
+    const [ExibirTeleComu, setExibirTeleComu] = useState(false);
+    const [Exibir4, setExibir4] = useState(false);
+
+
     return (
         <div className={Styles.categorias_container}>
             <ul>
-                <h3>Categorias</h3>
-                <li><span>Moda Feminina</span></li>
-                <li><span>Moda Masculina</span></li>
-                <li><span>Telefonia e Comunicação</span></li>
-                <li>Abacatr</li>
-                <li>Abacatr</li>
-                <li>Abacatr</li>
-                <li>Abacatr</li>
-                <li>Abacatr</li>
+                <div className={Styles.catego_title}>
+                    <img src={Catego} alt="categorias icone" />
+                    <h3>Categorias</h3>
+                </div>
+                
+                <li onMouseOver={() => {setExibirVest(true);}} onMouseOut={() => {setExibirVest(false);}}>
+                    <span> 
+                        <img src={ExibirVest? VestVerm : Vestido} alt="Vestido" /> 
+                        <div>
+                           <a href="/">Moda Feminina</a> 
+                        </div>
+                         
+                    </span>
+                </li>
+
+
+                <li onMouseOver={() => {setExibirMasc(true);}} onMouseOut={() => {setExibirMasc(false);}}>
+                    <span> 
+                        <img src={ExibirMasc? ModaMasculinaVerm : ModaMasculina} alt="" />
+                        <div>
+                           <a href="/">Moda Masculina</a> 
+                        </div>
+                         
+                    </span>
+                </li>
+
+                <li onMouseOver={() => {setExibirTeleComu(true);}} onMouseOut={() => {setExibirTeleComu(false);}}>
+                    <span>
+                    <img src={ExibirTeleComu? TelefoniaComuVermelho : TelefoniaComu} alt="Telefonia e comunicação icone" /> 
+                        <div>
+                            <a href="/">Telefonia e Comunicação</a> 
+                        </div>   
+                    </span>
+                </li>
+
+
+                <li>
+                    <span> 
+                        <div>
+                            <a href="/">Computadores</a>,<a href="/">Escritorio</a>
+                        </div> 
+                    </span>
+                </li>
+
+                <li>
+                    <span> 
+                        <div>
+                            <a href="/">Eletrônicos</a> 
+                        </div>   
+                    </span>
+                </li>
+
+                <li>
+                    <span> 
+                        <div>
+                            <a href="/">Joias e Relógios</a> 
+                        </div>   
+                    </span>
+                </li>
+
+                <li>
+                    <span> 
+                        <div>
+                            <a href="/">Casa</a>,<a href="/">Pet</a> e <a href="/">Eletrodomésticos</a> 
+                        </div>   
+                    </span>
+                </li>
+        
+                <li>
+                    <span> 
+                        <div>
+                            <a href="/">Bolsas</a> e <a href="/">Calçados</a> 
+                        </div>   
+                    </span>
+                </li>
+
+                <li>
+                    <span> 
+                        <div>
+                            <a href="/">Brinquedos</a> e <a href="/">Infantil</a> 
+                        </div>   
+                    </span>
+                </li>
+                
+                <li>
+                    <span> 
+                        <div>
+                            <a href="/">Diversão Ao Ar Livre</a> 
+                        </div>   
+                    </span>
+                </li>
+                
+                <li>
+                    <span> 
+                        <div>
+                            <a href="/">Saúde</a>,<a href="/">Beleza</a> e <a href="/">Cabelo</a>
+                        </div>   
+                    </span>
+                </li>
+                
+                <li>
+                    <span> 
+                        <div>
+                            <a href="/">Auto e Moto</a> 
+                        </div>   
+                    </span>
+                </li>
+                
+                <li>
+                    <span> 
+                        <div>
+                            <a href="/">Ferramentas e Reforma</a> 
+                        </div>   
+                    </span>
+                </li>
+                
             </ul>
         </div>
     )
