@@ -51,8 +51,6 @@
 
 
 
-
-
 .content {
     margin-left: 10px;
     display: flex;
@@ -60,10 +58,30 @@
     width: 900px;
 }
 
-.NovoUsuario {
-    background-color: blue;
-    height: 270px;
+
+
+
+.NovoUsuario_container {
+    height: 440px;
+    width: 337px;
+    padding: 15px;
     margin-top: 15px;
+    background-image:url("https://ae01.alicdn.com/kf/Hd9eb0ac076014d06bebe01dbc5260628n/676x880.png_.webp") ;
+    background-size: cover;
+}
+
+.NovoUso_Topo {
+    margin-top: 20px;  
+}
+
+.NovoUso_Topo a {
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+.NovoUso_Topo  p {
+    margin-top: 8px;
+    font-size: 12.6px;
 }
 
 .NovoUsu_ofertas {

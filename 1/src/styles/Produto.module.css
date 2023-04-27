@@ -1,0 +1,11 @@
+.produto_container {
+    height: 150px;
+}
+
+.produto_img {
+    height: 150px;
+}
+
+.produto_img img {
+    height: 100%;
+}

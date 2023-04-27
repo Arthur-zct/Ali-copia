@@ -1,10 +1,10 @@
 import Categorias from './catego';
 import Style from '../styles/main.module.css';
-import ImagemPromocional from '../img/Promocional.png'
+import Produto from '../components/Produto'
 
 export default function Main() {
 
-    //<div className={Style.ImagemPromocional}><img src={ImagemPromocional} alt="" /></div>
+    
     
     
     return (
@@ -27,15 +27,22 @@ export default function Main() {
                         </ul>
                     </div>
 
-                    <div className={Style.NovoUsuario}>
+                    <div className={Style.NovoUsuario_container}>
                         <div>
-                            <h3>Cupom de novo usuario</h3>
-                            <p>consiga um item bonus ou cupom</p>
-                        </div>
-                        <div className={Style.NovoUsu_ofertas}>
-                            <button>a</button>
-                            <div>foto foto foto</div>
-                            <button>a</button>
+                            <div className={Style.NovoUso_Topo}>
+                                <a href="/">
+                                <h3>Cupom de Novo Usuário</h3>
+                                <p>Consiga um item bônus ou cupom</p>
+                                </a>
+                            </div>
+
+                            <div className={Style.NovoUsu_ofertas}>
+                                <button>a</button>
+                                <div>
+                                    <Produto img="https://ae04.alicdn.com/kf/S70390f4b0ec548358afae70784b00a01o.jpg_350x350.jpg_480x480Q90.webp" discount="70%" price="3.300" />
+                                </div>
+                                <button>a</button>
+                            </div>
                         </div>
                     </div>
 
