@@ -64,14 +64,14 @@
 .NovoUsuario_container {
     height: 440px;
     width: 337px;
-    padding: 15px;
+    padding: 20px;
     margin-top: 15px;
     background-image:url("https://ae01.alicdn.com/kf/Hd9eb0ac076014d06bebe01dbc5260628n/676x880.png_.webp") ;
     background-size: cover;
 }
 
 .NovoUso_Topo {
-    margin-top: 20px;  
+    margin-top: 15px;  
 }
 
 .NovoUso_Topo a {
@@ -86,9 +86,41 @@
 
 .NovoUsu_ofertas {
     display: flex;
+    background-color: #ffffff;
+    border-radius: 7px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    width: 300px;
+    position: relative;
 }
 
+.NovoUsu_ofertas > div {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.NovoUsu_ofertas button {
+    height: 24px;
+    width: 25px;
+    position: absolute;
+    border: 0;
+    border-radius: 20px;
+}
+
+.button_esquerda {
+    top: 140px;
+    left: 2px;
+}
+
+.button_direita {
+    right: 2px;
+    top: 140px;
+}
+
+.NovoUsu_ofertas button > img {
+    height: 60%;
+    margin-top: 4px;
+}
 
 
 .BemVindo {

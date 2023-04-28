@@ -1,12 +1,20 @@
 import Categorias from './catego';
 import Style from '../styles/main.module.css';
 import Produto from '../components/Produto'
+import SetaEsquerda from '../img/seta-esquerda.png'
+import SetaDireita from '../img/seta-direita.png'
 
 export default function Main() {
+    //{id: 0, Imagem: "", descricao: "", desconto: "", preco: ""} 
 
+    const ProdutosDestaque = [ 
+        {id: 1, Imagem: "https://ae04.alicdn.com/kf/S70390f4b0ec548358afae70784b00a01o.jpg_350x350.jpg_480x480Q90.webp", descricao: "ssd", desconto: "70%", preco: "100"}, 
+        {id: 2, Imagem: "https://ae04.alicdn.com/kf/S3563f812160240b58b0d7c27e8ce647aS.jpg_350x350.jpg_480x480Q90.webp", descricao: "Fone sem fio", desconto: "77%", preco: "16,33"}, 
+        {id: 3, Imagem: "https://ae04.alicdn.com/kf/S7e74606524fb44a88cd1bd5d00a13c67y.jpg_350x350.jpg_480x480Q90.webp", descricao: "Relogio", desconto: "70%", preco: "20,30"}, 
+        {id: 4, Imagem: "https://ae04.alicdn.com/kf/Sea183c88402241ac8858c92f4c8581c2f.jpg_350x350.jpg_480x480Q90.webp", descricao: "Fones sem fio", desconto: "75%", preco: "26,25"} 
+    ];
     
-    
-    
+   
     return (
         <main>
             <div className={Style.Container}>
@@ -37,11 +45,15 @@ export default function Main() {
                             </div>
 
                             <div className={Style.NovoUsu_ofertas}>
-                                <button>a</button>
+                                <button className={Style.button_esquerda}><img src={SetaEsquerda} alt="" /></button>
                                 <div>
-                                    <Produto img="https://ae04.alicdn.com/kf/S70390f4b0ec548358afae70784b00a01o.jpg_350x350.jpg_480x480Q90.webp" discount="70%" price="3.300" />
+                                    
+                                    {ProdutosDestaque.map((produto) => (
+                                        <Produto key={produto.id} img={produto.Imagem} alt={produto.descricao} price={produto.preco} discount={produto.desconto} />
+                                    ))}
+                                    
                                 </div>
-                                <button>a</button>
+                                <button className={Style.button_direita}><img src={SetaDireita} alt="" /></button>
                             </div>
                         </div>
                     </div>
