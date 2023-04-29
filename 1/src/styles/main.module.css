@@ -123,19 +123,65 @@
 }
 
 
-.BemVindo {
-    margin: 20px;
-    margin-left: 190px;
-    margin-bottom: 50px;
-    height: 40px;
+
+
+
+
+.Bv_Superd {
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
-.Su_Dels {
-    margin: 10px;
+
+.Bvsuperd_container1 {
+    display: flex;
+    
+}
+
+.Achados_semana {
+    width: 344px;
+    height: 137px;
+}
+
+.Achados_link {
+    height: 100%;
+    width: 100%;
+}
+
+.Achados_link img {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+.BemVindo {
+    margin: 20px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    height: 40px;
+    width: 150px;
+}
+
+
+
+
+
+
+
+.Super_Dels {
+    
     background-color: blueviolet;
 }
 
-.Su_Dels > .Super_Products {
+.Super_Dels > .Super_Products {
     display: flex;
 }
 

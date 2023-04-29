@@ -59,17 +59,28 @@ export default function Main() {
                     </div>
 
                     
-                    <div className={Style.Bv_Sd}>
-                        <div className={Style.BemVindo}>
-                            <p>Bem vindo novamente ao Aliexpress</p>
-                            <div>
-                                <button>Increva-se</button>
-                                <button>Acessar</button>
+                    
+                    <div className={Style.Bv_Superd}>
+                        <div className={Style.Bvsuperd_container1}>
+                            <div className={Style.Achados_semana}>
+                                <a href="/" className={Style.Achados_link}>
+                                    <img src="https://ae01.alicdn.com/kf/Hc69569dc4495438288901cbe7ae240e5g.jpg_Q90.jpg_.webp" alt="" />
+                                </a>
+                            </div>
+
+                            <div className={Style.BemVindo}>
+                                <p>Bem vindo novamente ao Aliexpress</p>
+                                <div>
+                                    <button>Increva-se</button>
+                                    <button>Acessar</button>
+                                </div>
                             </div>
                         </div>
 
+                        
 
-                        <div className={Style.Su_Dels}>
+
+                        <div className={Style.Super_Dels}>
                             <div>
                                 <h3>Super<span>Deals</span> </h3>
                                 <a href="/">VER MAIS</a>
