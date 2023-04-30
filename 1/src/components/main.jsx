@@ -71,8 +71,8 @@ export default function Main() {
                             <div className={Style.BemVindo}>
                                 <p>Bem vindo novamente ao Aliexpress</p>
                                 <div>
-                                    <button>Increva-se</button>
-                                    <button>Acessar</button>
+                                    <button className={Style.Button_1}>Inscreva-se</button>
+                                    <button className={Style.Button_2}>Acessar</button>
                                 </div>
                             </div>
                         </div>
