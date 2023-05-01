@@ -3,9 +3,9 @@ import Style from '../styles/main.module.css';
 import Produto from '../components/Produto'
 import SetaEsquerda from '../img/seta-esquerda.png'
 import SetaDireita from '../img/seta-direita.png'
+import Produtosdestacados from './ProdutosDestacados'
 
 export default function Main() {
-    //{id: 0, Imagem: "", descricao: "", desconto: "", preco: ""} 
 
     const ProdutosDestaque = [ 
         {id: 1, Imagem: "https://ae04.alicdn.com/kf/S70390f4b0ec548358afae70784b00a01o.jpg_350x350.jpg_480x480Q90.webp", descricao: "ssd", desconto: "70%", preco: "100"}, 
@@ -19,6 +19,7 @@ export default function Main() {
         <main>
             <div className={Style.Container}>
                 <Categorias/>
+                
                 <section className={Style.content}>
 
                     <div>
@@ -80,39 +81,13 @@ export default function Main() {
                         
 
 
-                        <div className={Style.Super_Dels}>
-                            <div>
-                                <h3>Super<span>Deals</span> </h3>
-                                <a href="/">VER MAIS</a>
-                            </div>
-                            <p>Top products. Inccredible prices</p>
-                            <div className={Style.Super_Products}>
-                                <div>
-                                    FOTO
-                                    <div>
-                                        <span>Preço</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    FOTO
-                                    <div>
-                                        <span>Preço</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    FOTO
-                                    <div>
-                                        <span>Preço</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Produtosdestacados Title={<img src="https://ae01.alicdn.com/kf/H7f1fd8c0a5fe43cb8166c370350d846ek/216x42.png_.webp" alt="" className={Style.titulofoto}/>} Description="Produtos incriveis por preços imbativeis"/>
 
                     </div>
                     
                 </section>
             </div>
-{/* Eu posso fazer um componente com os abaixo e colocar os valores ja que são iguais praticamente, só tem que ver o primeiro que o titulo tem duas cores. */}
+
             <section className={Style.produtos_destacados}>
                     
                 <div>
@@ -175,9 +150,14 @@ export default function Main() {
                         </div>
                     </div>
 
+                    
+                                        
                 </div>
 
+                
+
             </section>
+
             
         </main>
     )
