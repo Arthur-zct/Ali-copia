@@ -13,6 +13,12 @@ export default function Main() {
         {id: 3, Imagem: "https://ae04.alicdn.com/kf/S7e74606524fb44a88cd1bd5d00a13c67y.jpg_350x350.jpg_480x480Q90.webp", descricao: "Relogio", desconto: "70%", preco: "20,30"}, 
         {id: 4, Imagem: "https://ae04.alicdn.com/kf/Sea183c88402241ac8858c92f4c8581c2f.jpg_350x350.jpg_480x480Q90.webp", descricao: "Fones sem fio", desconto: "75%", preco: "26,25"} 
     ];
+
+    const ProdutosTeste = [ 
+        {id: 1, Imagem: "https://ae04.alicdn.com/kf/Sbe5293c4fee14877b924dc68d47ceb249.jpg_480x480Q90.webp", descricao: "ssd", desconto: "70%", preco: "100"}, 
+        {id: 2, Imagem: "https://ae04.alicdn.com/kf/S6299397967814e708e4be262d16f7e29D.jpg_480x480Q90.webp", descricao: "Fone sem fio", desconto: "77%", preco: "16,33"}, 
+        {id: 3, Imagem: "https://ae04.alicdn.com/kf/Scd7b333f06b842d28c741d8dc27d04fa5.jpg_480x480Q90.webp", descricao: "Relogio", desconto: "70%", preco: "20,30"},  
+    ];
     
    
     return (
@@ -50,7 +56,15 @@ export default function Main() {
                                 <div>
                                     
                                     {ProdutosDestaque.map((produto) => (
-                                        <Produto key={produto.id} img={produto.Imagem} alt={produto.descricao} price={produto.preco} discount={produto.desconto} />
+                                        <div className={Style.NovoUso_Produtos} key={produto.id}> 
+                                           <Produto 
+                                                img={produto.Imagem} 
+                                                alt={produto.descricao} 
+                                                price={produto.preco} 
+                                                discount={produto.desconto}
+                                            /> 
+                                        </div>
+                                        
                                     ))}
                                     
                                 </div>
@@ -62,6 +76,7 @@ export default function Main() {
                     
                     
                     <div className={Style.Bv_Superd}>
+
                         <div className={Style.Bvsuperd_container1}>
                             <div className={Style.Achados_semana}>
                                 <a href="/" className={Style.Achados_link}>
@@ -79,9 +94,23 @@ export default function Main() {
                         </div>
 
                         
+                        <div className={Style.SuperD}>
+                            <div className={Style.SuperD_title}>
+                                <img src="https://ae01.alicdn.com/kf/H7f1fd8c0a5fe43cb8166c370350d846ek/216x42.png_.webp" alt="Super Dels" className={Style.SuperDtitle}/>
+                                <a href="/">Veja mais</a>
+                            </div>
+                            <p>Produtos incriveis por preços imbativeis</p>
+                            <div className={Style.SuperDproducts_container}>
+                                {ProdutosTeste.map((produto) => (
+                                    <div className={Style.SuperD_products} key={produto.id} >
+                                        <Produto img={produto.Imagem} alt={produto.descricao} price={produto.preco} discount={produto.desconto} sold={<p>550 vendido</p>}/>
+                                    </div>
+                                    
+                                ))}
+                            </div>
+                        </div>                
 
-
-                        <Produtosdestacados Title={<img src="https://ae01.alicdn.com/kf/H7f1fd8c0a5fe43cb8166c370350d846ek/216x42.png_.webp" alt="" className={Style.titulofoto}/>} Description="Produtos incriveis por preços imbativeis"/>
+                        
 
                     </div>
                     
