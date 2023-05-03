@@ -11,7 +11,7 @@ header {
 .topo {
     height: 38px;
     display: flex;
-    width: 800px;
+    width: 1050px;
     margin: auto;
 }
 
@@ -31,7 +31,7 @@ header {
 .pesquisa {
     display: flex;
     margin: auto;
-    width: 998px;
+    width: 1200px;
     padding-left: 50px;
     padding-right: 50px;
 }

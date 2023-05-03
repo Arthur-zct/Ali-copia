@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 1300px;
-    margin: auto;
+    margin-left: 11%;
     margin-top: 20px;
 }
 
@@ -21,26 +21,26 @@
     list-style: none;
     display: flex;
     background-color: #ffffff;
-    padding-top: 16px;
+    padding-top: 20px;
     border-radius: 10px;
 }
 
 .imagem1 {
-    height: 23px;
-    width: 240px;
+    height: 21.9px;
+    width: 230px;
     margin-left: 20px;
 }
 
 .imagem2 {
-    height: 23px;
+    height: 21.9px;
     width: 330px;
-    margin-left: 80px;
+    margin-left: 87px;
 }
 
 .imagem3 {
-    height: 23px;
-    width: 155px;
-    margin-left: 70px;
+    height: 21.9px;
+    width: 150px;
+    margin-left: 90px;
 }
 
 .ImagemPromocional img {
@@ -261,7 +261,7 @@
 
 .SuperD_products {
     height: 210px;
-    width: 170px;
+    width: 160px;
 }
 
 .SuperD_products p {

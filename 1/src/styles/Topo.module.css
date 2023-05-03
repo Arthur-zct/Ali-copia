@@ -1,5 +1,7 @@
 .topo {
     display: flex;
+    width: 1050px;
+    padding-left: 250px;
 }
 
 .topo > div {
