@@ -11,7 +11,7 @@ export default  function Produto ({img, alt, price, discount, sold}) {
         
       </div>
 
-      <p>R$ {price}</p>
+      {price ? (<p>R$ {price}</p>) : ""}
 
       {sold ? sold : ""}
     </a>

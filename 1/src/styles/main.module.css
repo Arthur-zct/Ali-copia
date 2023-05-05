@@ -16,7 +16,7 @@
 
 
 .ImagemPromocional {
-    width: 950px;
+    width: 943px;
     height: 60px;
     list-style: none;
     display: flex;
@@ -179,7 +179,7 @@
     margin-left: 15px;
     margin-bottom: 15px;
     height: 137px;
-    width: 240px;
+    width: 233px;
     background-color: #ffffff;
     font-size: 14px;
     text-align: center;
@@ -229,6 +229,7 @@
     padding-right: 20px;
     border-radius: 8px;
     height: 290px;
+    width: 592px;
 }
 
 .SuperD > p {
@@ -277,8 +278,11 @@
 
 
 .produtos_destacados {
+    margin-top: 10px;
+    width: 1300px;
+    margin-left: 11%;
     display: flex;
-    margin-left: 20px;
+    column-gap: 15px;
 }
 
 
