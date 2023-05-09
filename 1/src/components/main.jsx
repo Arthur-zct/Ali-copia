@@ -31,13 +31,13 @@ export default function Main() {
         {id: 2, Imagem: "https://ae04.alicdn.com/kf/S29a3c2f176434adfb17b59eb3d10747fc.jpg_480x480Q90.webp", descricao: "Gancho de parede de cozinha", desconto: "81%", Codigo: "Achados.sem", preco: "4,98"}, 
         {id: 3, Imagem: "https://ae04.alicdn.com/kf/S4647e47d0558486d8d4afeeb3952f650g.jpg_480x480Q90.webp", descricao: "Super absorvente anti derrapante para cozinha", desconto: "79%", Codigo: "Achados.sem", preco: "13,94"}, 
     ]
+
     
-   
     return (
         <main>
-            <div className={Style.Container}>
-                <Categorias/>
-                
+            <div className={Style.Container}>    
+                <Categorias />
+   
                 <section className={Style.content}>
 
                     <div>

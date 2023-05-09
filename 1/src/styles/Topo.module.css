@@ -1,7 +1,7 @@
 .topo {
     display: flex;
-    width: 1050px;
-    padding-left: 250px;
+    width: 1100px;
+    padding-left: 200px;
 }
 
 .topo > div {
@@ -29,6 +29,24 @@
     font-family: Open Sans, Roboto, Arial, Helvetica, sans-serif, SimSun;
 }
 
+.topo ul {
+    background-color: #ffffff;
+    position: absolute;
+    top: 35px;
+    padding-left: 3px;
+    padding-bottom: 1px;
+    border: 1px solid rgba(128, 128, 128, 0.44);
+}
+
+.topo li {
+    text-indent: 4px;
+    margin-top: 9px;
+    margin-bottom: 7px;
+    text-decoration: none;
+    color: #333;
+    font-size: 12.8px;
+    font-family: Open Sans, Roboto, Arial, Helvetica, sans-serif, SimSun;
+}
 
 
 
@@ -75,6 +93,7 @@
 
 .ul_venda {
     width: 204px;
+    left: -0.3px;
 }
 
 
@@ -105,8 +124,128 @@
 
 .ul_ajuda {
     width: 272px;
+    left: -0.3px;
 }
 
+
+
+
+.App a {
+    display: flex;
+}
+
+.App a p {
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.App img {
+    height: 15px;
+    margin-top: 4px;
+}
+
+
+
+
+.local_container {
+    position: relative;
+    width: 144px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    height: 80%;
+    
+}
+
+.local_container:hover {
+    border: 1px solid rgba(128, 128, 128, 0.44);
+    height: auto;
+}
+
+.span_local {
+    position: absolute;
+    width: 100%;
+    padding-left: 7px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.span_local a {
+    display: flex;
+    padding-top: 3px;
+    height: 100%;
+}
+
+.span_local a p {
+    margin-top: 1.5px;
+    margin-left: 4px;
+}
+
+.span_local a > img {
+margin-top: 4px;
+}
+
+.local_img {
+    height: 17px;
+}
+
+.local_img img {
+    height: 100%;
+}
+
+.ul_local {
+    width: 240px;
+    left: -100.9px;
+}
+
+.ul_local li {
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+.ul_local input {
+    width: 200px;
+    height: 32px;
+    text-indent: 5px;
+    margin-top: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.418);
+    border-radius: 4px;
+}
+
+.ul_local > li > div > p {
+    font-weight: bold;
+}
+
+.Enviarpara {
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.418);
+    height: 32px;
+    padding-top: 6px;
+    padding-left: 5px;
+    margin-top: 9px;
+    border-radius: 4px;
+    width: 200px;
+    
+}
+
+.Enviarpara p {
+    margin-top: 2px;
+}
+
+.Enviarpara img {
+    height: 75%;
+}
+
+.filtrar {
+    height: 35px;
+    width: 200px;
+    background-color: #FF4747;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #fafafa;
+    text-align: center;
+    padding-top: 9px;
+    border-radius: 2px;
+}
 
 
 
@@ -132,27 +271,9 @@
 
 .ul_conta {
     width: 200px;
-}
-
-
-
-
-.topo ul {
-    background-color: #ffffff;
-    position: absolute;
-    top: 35px;
     left: -1px;
-    padding-left: 3px;
-    padding-bottom: 1px;
-    border: 1px solid rgba(128, 128, 128, 0.44);
 }
 
-.topo li {
-    text-indent: 4px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    text-decoration: none;
-    color: #333;
-    font-size: 12.8px;
-    font-family: Open Sans, Roboto, Arial, Helvetica, sans-serif, SimSun;
-}
+
+
+

@@ -11,7 +11,6 @@ export default function ListaComponente ({img, imgV, alt, name}) {
           <img src={Exibir ? imgV : img} alt="" />
           
           {name}
-          
         </span>
     </li>
   )

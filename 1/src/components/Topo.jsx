@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Style from '../styles/Topo.module.css'
 import Setinha from '../img/setinha.png'
 import Celular from '../img/celular.png'
+import Brazil from '../img/brasil.png'
+
 
 const Topo = () => {
 
@@ -55,30 +57,71 @@ const Topo = () => {
         <div>
             <a href="/">
                 Proteção ao consumidor
-                <img src={Setinha} alt="a" />
             </a>       
         </div>
 
-        <div>
+        <div className={Style.App}>
             <a href="/">
                 <img src={Celular} alt="a" />
-                App
+                <p>App</p>
             </a>
         </div>
 
-        <div className={Style.pais_container} onMouseOver={() => {setExibir3(true);}} onMouseOut={() => {setExibir3(false);}}>
-            <span>
+        <div className={Style.local_container} onMouseOver={() => {setExibir3(true);}} onMouseOut={() => {setExibir3(false);}}> 
+            <div className={Exibir3 ? Style.exibir : Style.ocultar}>
+                <ul className={Style.ul_local}>
+                    <li>
+                        <div>
+                            <p>CEP</p>
+                            <input type="text" placeholder='Informar um cep' />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Enviar para</p>
+                            <div className={Style.Enviarpara}>
+                                <img src={Brazil} alt="Bandeira do brasil" />
+                                <p>Brazil</p>
+                            </div>
+                            <div className={Style.Enviarpara}>
+                                <p>Sao paulo</p>
+                            </div>
+                            <div className={Style.Enviarpara}>
+                                <p>Sao paulo</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Idioma</p>
+                            <div className={Style.Enviarpara}>
+                                <p>Portugues</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Moeda</p>
+                            <div className={Style.Enviarpara}>
+                                <p>BRL (Reais)</p>
+                            </div>
+                        </div>
+                    </li>
+                    <div className={Style.filtrar}>
+                        <p>Filtrar</p>
+                    </div>
+                </ul> 
+            </div>
+            <span className={Style.span_local}>
                 <a href="/">
-                    brasil/portugues/brl
+                    <div className={Style.local_img}>
+                        <img src={Brazil} alt="Bandeira do brasil"/>
+                    </div>
+                    <p> / Português / BRL</p>
                     <img src={Setinha} alt="a" />
                 </a>
             </span>
-            <div className={Exibir3 ? Style.exibir : Style.ocultar}>
-                <ul>
-                    <li>aaaa</li>
-                </ul> 
-            </div>
-            
+
         </div>
 
 
