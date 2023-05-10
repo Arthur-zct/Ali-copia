@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Ali-copia/static/css/main.579436d5.css",
+    "main.js": "/Ali-copia/static/js/main.f402806f.js",
+    "static/media/Logo.png": "/Ali-copia/static/media/Logo.529f576eb87582cdb034.png",
+    "index.html": "/Ali-copia/index.html",
+    "main.579436d5.css.map": "/Ali-copia/static/css/main.579436d5.css.map",
+    "main.f402806f.js.map": "/Ali-copia/static/js/main.f402806f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.579436d5.css",
+    "static/js/main.f402806f.js"
+  ]
+}
