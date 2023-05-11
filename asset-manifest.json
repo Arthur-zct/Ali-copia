@@ -1,14 +1,22 @@
 {
   "files": {
-    "main.css": "/Ali-copia/static/css/main.579436d5.css",
-    "main.js": "/Ali-copia/static/js/main.f402806f.js",
+    "main.css": "/Ali-copia/static/css/main.13220ff5.css",
+    "main.js": "/Ali-copia/static/js/main.2d6c2c1a.js",
     "static/media/Logo.png": "/Ali-copia/static/media/Logo.529f576eb87582cdb034.png",
+    "static/media/achadossemana.webp": "/Ali-copia/static/media/achadossemana.4ebf5ba4a7653e325888.webp",
+    "static/media/realme.webp": "/Ali-copia/static/media/realme.4367d1c2b1b72f32b3fc.webp",
+    "static/media/relogio.webp": "/Ali-copia/static/media/relogio.915fe28c3fbd06c5e504.webp",
+    "static/media/fundo.webp": "/Ali-copia/static/media/fundo.8ad589243dcd8a32d1cd.webp",
+    "static/media/gerador.webp": "/Ali-copia/static/media/gerador.7ac88c6d5b5ba0daa3c0.webp",
+    "static/media/cupom.webp": "/Ali-copia/static/media/cupom.5eb0c52ef84836503083.webp",
+    "static/media/fretegratis.webp": "/Ali-copia/static/media/fretegratis.dea554e9b0621c5f41f8.webp",
+    "static/media/pague.webp": "/Ali-copia/static/media/pague.92ead4c6ba56d606354c.webp",
     "index.html": "/Ali-copia/index.html",
-    "main.579436d5.css.map": "/Ali-copia/static/css/main.579436d5.css.map",
-    "main.f402806f.js.map": "/Ali-copia/static/js/main.f402806f.js.map"
+    "main.13220ff5.css.map": "/Ali-copia/static/css/main.13220ff5.css.map",
+    "main.2d6c2c1a.js.map": "/Ali-copia/static/js/main.2d6c2c1a.js.map"
   },
   "entrypoints": [
-    "static/css/main.579436d5.css",
-    "static/js/main.f402806f.js"
+    "static/css/main.13220ff5.css",
+    "static/js/main.2d6c2c1a.js"
   ]
 }
