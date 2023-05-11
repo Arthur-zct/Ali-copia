@@ -1,6 +1,7 @@
 import React from 'react'
 import Style from '../styles/ProdutosDestacados.module.css'
 import Produto from './Produto'
+import Setinha from '../img/setinha2.png'
 
 const ProdutosDestacados = ({Title, Description, Products}) => {
 //{produto.desconto}
@@ -19,7 +20,7 @@ const ProdutosDestacados = ({Title, Description, Products}) => {
         <div className={Style.Achados_semana}> 
           <p>R$ {preco}</p>
           <div>
-            <img src="https://ae01.alicdn.com/kf/H76430522fb7d41d99db9c7d23b0c59396.png" alt="foto" />
+            <img src={Setinha} alt="foto" />
             <p>{desconto}</p>
           </div>
         </div>
