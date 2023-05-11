@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ali-copia/static/css/main.13220ff5.css",
-    "main.js": "/Ali-copia/static/js/main.2d6c2c1a.js",
+    "main.js": "/Ali-copia/static/js/main.d8284641.js",
     "static/media/Logo.png": "/Ali-copia/static/media/Logo.529f576eb87582cdb034.png",
     "static/media/achadossemana.webp": "/Ali-copia/static/media/achadossemana.4ebf5ba4a7653e325888.webp",
     "static/media/realme.webp": "/Ali-copia/static/media/realme.4367d1c2b1b72f32b3fc.webp",
@@ -13,10 +13,10 @@
     "static/media/pague.webp": "/Ali-copia/static/media/pague.92ead4c6ba56d606354c.webp",
     "index.html": "/Ali-copia/index.html",
     "main.13220ff5.css.map": "/Ali-copia/static/css/main.13220ff5.css.map",
-    "main.2d6c2c1a.js.map": "/Ali-copia/static/js/main.2d6c2c1a.js.map"
+    "main.d8284641.js.map": "/Ali-copia/static/js/main.d8284641.js.map"
   },
   "entrypoints": [
     "static/css/main.13220ff5.css",
-    "static/js/main.2d6c2c1a.js"
+    "static/js/main.d8284641.js"
   ]
 }
