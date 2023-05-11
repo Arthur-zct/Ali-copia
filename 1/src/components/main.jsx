@@ -5,6 +5,16 @@ import SetaEsquerda from '../img/seta-esquerda.png'
 import SetaDireita from '../img/seta-direita.png'
 import Produtosdestacados from './ProdutosDestacados'
 
+
+import Frete from '../img/fretegratis.webp'
+import Cupom from '../img/cupom.webp'
+import Pague from '../img/pague.webp'
+import AchSemana from '../img/achadossemana.webp'
+
+import Gerador from '../img/produtos/gerador.webp'
+import Relogio from '../img/produtos/relogio.webp'
+import Realme from '../img/produtos/realme.webp'
+
 export default function Main() {
 
     const ProdutosDestaque = [ 
@@ -21,9 +31,9 @@ export default function Main() {
     ];
 
     const ProdExclusivoLojas = [
-        {id: 1, Imagem: "https://ae01.alicdn.com/kf/Safdd24bc01f5432683e36adae82fcddeE.png_200x200.png_.webp", descricao: "gerador portatil de alimentação", desconto: "60%", ComCodigo: "157.27", Codigo: "Cod.loj", preco: "3000"}, 
-        {id: 2, Imagem: "https://ae01.alicdn.com/kf/Scc1bf900e88b4761b569639110be72bep.jpg_200x200Q90.jpg_.webp", descricao: "Relogio", desconto: "20%", ComCodigo: "78.64", Codigo: "Cod.loj", preco: "952,33"}, 
-        {id: 3, Imagem: "https://ae01.alicdn.com/kf/S1b94269851904739989d827bbd380fb5Q.jpg_200x200Q90.jpg_.webp", descricao: "Realme FT12 Pro", desconto: "30%", ComCodigo: "422.30", Codigo: "Cod.loj", preco: "2500,30"},  
+        {id: 1, Imagem: Gerador, descricao: "gerador portatil de alimentação", desconto: "60%", ComCodigo: "157.27", Codigo: "Cod.loj", preco: "3000"}, 
+        {id: 2, Imagem: Relogio, descricao: "Relogio", desconto: "20%", ComCodigo: "78.64", Codigo: "Cod.loj", preco: "952,33"}, 
+        {id: 3, Imagem: Realme, descricao: "Realme FT12 Pro", desconto: "30%", ComCodigo: "422.30", Codigo: "Cod.loj", preco: "2500,30"},  
     ]
 
     const AchadosSemanaProducts = [
@@ -43,13 +53,13 @@ export default function Main() {
                     <div>
                         <ul className={Style.ImagemPromocional}>
                             <li className={Style.imagem1}>
-                                <img src="https://ae01.alicdn.com/kf/Hf1cb2e658ce54f779902bd0d57a1ad43S/221x22.png_.webp" alt="" />
+                                <img src={Frete} alt="Frete gratis" />
                             </li>
                             <li className={Style.imagem2}>
-                                <img src="https://ae01.alicdn.com/kf/H89ab02b8ab3740c4a5af59be4e4a54cbc/321x22.png_.webp" alt="" />
+                                <img src={Cupom} alt="cupom para novos usuarios" />
                             </li>
                             <li className={Style.imagem3}>
-                                <img src="https://ae01.alicdn.com/kf/H6f30d07d0efa4e89aac0605d6ab46cb8l/145x22.png_.webp" alt="" />
+                                <img src={Pague} alt="pague com pix" />
                             </li>
                         </ul>
                     </div>
@@ -92,7 +102,7 @@ export default function Main() {
                         <div className={Style.Bvsuperd_container1}>
                             <div className={Style.Achados_semana}>
                                 <a href="/" className={Style.Achados_link}>
-                                    <img src="https://ae01.alicdn.com/kf/Hc69569dc4495438288901cbe7ae240e5g.jpg_Q90.jpg_.webp" alt="" />
+                                    <img src={AchSemana} alt="Achados da semana" />
                                 </a>
                             </div>
 
